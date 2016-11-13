@@ -222,6 +222,19 @@ static NSString *LZFBrandCellID = @"brand";
     [self.navigationController pushViewController:detailVc animated:YES];
 }
 
+- (void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset {
+    // 动态隐藏和显示导航条
+    if(velocity.y > 0) { // 加速度 > 0 时隐藏导航条
+        [self.navigationController setNavigationBarHidden:YES animated:YES];
+        [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+        
+    } else {
+        
+        [self.navigationController setNavigationBarHidden:NO animated:YES];
+        [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
+    }
+}
+
 /** 监听 header 完全出现的情况: 这里决定何时开始刷新数据 */
 - (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
 
