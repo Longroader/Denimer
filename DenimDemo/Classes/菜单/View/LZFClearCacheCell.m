@@ -21,6 +21,7 @@
         
         // 1.cell基本设置
         self.textLabel.text = @"清除缓存(缓存计算中..)";
+        [self.textLabel setFont:[UIFont systemFontOfSize:15.0]];
         self.textLabel.textColor = [UIColor whiteColor];
         self.backgroundColor = [UIColor clearColor];
         self.selectionStyle = UITableViewCellSelectionStyleNone;

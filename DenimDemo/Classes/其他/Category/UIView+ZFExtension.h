@@ -22,5 +22,9 @@
 @property (nonatomic, assign) CGFloat zf_right;
 @property (nonatomic, assign) CGFloat zf_bottom;
 
+/**
+ * 从和类名相同的Xib里加载数据到cell
+ */
 + (instancetype)lzf_viewFromXib;
+
 @end

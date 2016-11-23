@@ -8,6 +8,7 @@
 
 #import "LZFMenuViewController.h"
 #import "LZFClearCacheCell.h"
+#import "LZFSettingCell.h"
 #import "LZFAboutUsViewController.h"
 #import <SVProgressHUD.h>
 
@@ -20,8 +21,7 @@
 
 @implementation LZFMenuViewController
 
-static NSString * const LZFClearCacheCellId = @"LZFClearCacheCell";
-static NSString * const menuCellID = @"menuCell";
+static NSString * const ClearCacheCellId = @"ClearCache";
 
 - (void)viewWillAppear:(BOOL)animated {
     // 界面弹出动画效果
@@ -36,19 +36,17 @@ static NSString * const menuCellID = @"menuCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSHomeDirectory();
     [self setupMenuTableView];
 }
 
 - (void)setupMenuTableView {
     self.menuTableView.delegate = self;
     self.menuTableView.dataSource = self;
-    
     // 设置tableView行高
     self.menuTableView.rowHeight = 60;
     
     // 注册cell
-    [self.menuTableView registerClass:[LZFClearCacheCell class] forCellReuseIdentifier:LZFClearCacheCellId];
+    [self.menuTableView registerClass:[LZFClearCacheCell class] forCellReuseIdentifier:ClearCacheCellId];
 }
 
 #pragma mark - 监听
@@ -69,34 +67,11 @@ static NSString * const menuCellID = @"menuCell";
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    if (indexPath.row == 0) { // 返回自定义清除缓存cell
-        
-        return [tableView dequeueReusableCellWithIdentifier:LZFClearCacheCellId];
-    } else { // 返回其他类型cell
-        
-        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:menuCellID];
-        if (cell == nil) {
-            // cell基本外观设置
-            
-            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:menuCellID];
-            cell.backgroundColor = [UIColor clearColor];
-            cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-            cell.textLabel.textColor = [UIColor whiteColor];
-            cell.selectionStyle = UITableViewCellSelectionStyleNone;
-            cell.highlighted = YES;
-        }
-        
-        if (indexPath.row == 1) {
-            cell.textLabel.text = @"检查更新";
-        } else if (indexPath.row == 2) {
-            cell.textLabel.text = @"给我们好评";
-        } else if (indexPath.row == 3) {
-            cell.textLabel.text = @"关于我们";
-        }
-        
-        return cell;
+    if (indexPath.row == 0) { // 第0行返回自定义清除缓存cell
+        return [tableView dequeueReusableCellWithIdentifier:ClearCacheCellId];
+    } else { // 其他行返回setting类型的cell
+        return [LZFSettingCell cellWithTableView:tableView indexPath:(NSIndexPath *)indexPath];
     }
-    
 }
 
 #pragma mark - UITableViewDelegate
@@ -112,6 +87,10 @@ static NSString * const menuCellID = @"menuCell";
         }];
         
     } else if (indexPath.row == 2) {
+        
+        // 跳转AppStore好评
+        NSString *str = [NSString stringWithFormat:@"itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?id=%@&pageNumber=0&sortOrdering=2&type=Purple+Software&mt=8",@"1178956065"];
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:str]];
         
         // 展示【给我们评分】弹出文本
         [SVProgressHUD showImage:nil status:@"Thanks☺☺☺"];
@@ -131,7 +110,7 @@ static NSString * const menuCellID = @"menuCell";
 }
 
 - (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
     
+    [super didReceiveMemoryWarning];
 }
 @end

@@ -10,5 +10,6 @@ NSString * const LZFCommonURL = @"http://api.budejie.com/api/api_open.php";
 NSString * const LZFUserSexMale = @"m";
 /** 女性用户LZFUser - sex - male */
 NSString * const LZFUserSexFemale = @"f";
+
 /** 标题按钮重复点击通知 */
 NSString * const LZFTitleButtonDidRepeatClickNotification = @"LZFTitleButtonDidRepeatClickNotification";

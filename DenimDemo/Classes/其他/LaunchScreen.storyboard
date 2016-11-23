@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="7 for" translatesAutoresizingMaskIntoConstraints="NO" id="YV6-Xs-LHG">
-                                <rect key="frame" x="45" y="54" width="240" height="128"/>
+                                <rect key="frame" x="174" y="20" width="240" height="128"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LEE" translatesAutoresizingMaskIntoConstraints="NO" id="I66-B2-2zY">
                                 <rect key="frame" x="185" y="386" width="90" height="75"/>
@@ -29,9 +29,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Levi's" translatesAutoresizingMaskIntoConstraints="NO" id="LdS-ve-9qN">
                                 <rect key="frame" x="25" y="250" width="240" height="128"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CK" translatesAutoresizingMaskIntoConstraints="NO" id="sbr-gM-RRt">
-                                <rect key="frame" x="285" y="167" width="240" height="128"/>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wrang" translatesAutoresizingMaskIntoConstraints="NO" id="btA-Jt-tpt">
                                 <rect key="frame" x="246" y="289" width="240" height="128"/>
                             </imageView>
@@ -39,10 +36,13 @@
                                 <rect key="frame" x="9" y="452" width="240" height="128"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="45" translatesAutoresizingMaskIntoConstraints="NO" id="aoA-mo-gOX">
-                                <rect key="frame" x="303" y="54" width="240" height="128"/>
+                                <rect key="frame" x="360" y="250" width="240" height="128"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SkD-tl-kLr">
                                 <rect key="frame" x="265" y="412" width="240" height="128"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CK" translatesAutoresizingMaskIntoConstraints="NO" id="sbr-gM-RRt">
+                                <rect key="frame" x="444" y="34" width="240" height="128"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>

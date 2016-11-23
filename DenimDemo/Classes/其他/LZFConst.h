@@ -10,5 +10,6 @@ UIKIT_EXTERN NSString * const LZFCommonURL;
 UIKIT_EXTERN NSString * const LZFUserSexMale;
 /** 女性用户LZFUser - sex - male */
 UIKIT_EXTERN NSString * const LZFUserSexFemale;
+
 /** 标题按钮重复点击通知 */
 UIKIT_EXTERN NSString * const LZFTitleButtonDidRepeatClickNotification;

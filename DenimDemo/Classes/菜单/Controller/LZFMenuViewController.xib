@@ -84,32 +84,32 @@
                                 </tableView>
                             </subviews>
                             <constraints>
+                                <constraint firstItem="3aX-VC-uDK" firstAttribute="top" secondItem="KNW-d7-M8V" secondAttribute="bottom" constant="30" id="04Q-8y-pPQ"/>
                                 <constraint firstItem="VBF-K8-cQH" firstAttribute="leading" secondItem="Gpf-C1-8Eu" secondAttribute="trailing" constant="50" id="0I9-SR-YBf"/>
                                 <constraint firstItem="VBF-K8-cQH" firstAttribute="leading" secondItem="3aX-VC-uDK" secondAttribute="trailing" constant="70" id="2JB-KU-Cze"/>
-                                <constraint firstItem="3aX-VC-uDK" firstAttribute="top" secondItem="KNW-d7-M8V" secondAttribute="bottom" constant="30" id="2iu-8b-zbl"/>
                                 <constraint firstItem="UQe-pc-iNZ" firstAttribute="centerX" secondItem="VBF-K8-cQH" secondAttribute="centerX" id="3XL-u7-1p3"/>
                                 <constraint firstItem="7oY-H8-1C7" firstAttribute="centerX" secondItem="k3M-hh-cUS" secondAttribute="centerX" id="54q-js-gKM"/>
-                                <constraint firstItem="Gpf-C1-8Eu" firstAttribute="centerY" secondItem="3aX-VC-uDK" secondAttribute="centerY" id="6Fa-d3-aU6"/>
+                                <constraint firstItem="3aX-VC-uDK" firstAttribute="top" secondItem="VBF-K8-cQH" secondAttribute="top" id="7f7-7p-VG8"/>
                                 <constraint firstAttribute="trailing" secondItem="wxL-ov-b9H" secondAttribute="trailing" id="8l0-Qr-12i"/>
                                 <constraint firstItem="fRw-Ck-1rH" firstAttribute="top" secondItem="88L-Ph-gIj" secondAttribute="top" id="9FO-cX-ler"/>
                                 <constraint firstItem="4aY-jg-rwU" firstAttribute="leading" secondItem="k3M-hh-cUS" secondAttribute="trailing" constant="50" id="9Sk-gE-2l4"/>
                                 <constraint firstItem="wxL-ov-b9H" firstAttribute="leading" secondItem="88L-Ph-gIj" secondAttribute="leading" id="Bfd-5p-pEv"/>
-                                <constraint firstItem="Gpf-C1-8Eu" firstAttribute="leading" secondItem="3aX-VC-uDK" secondAttribute="trailing" constant="50" id="GPU-4j-KR7"/>
-                                <constraint firstItem="4aY-jg-rwU" firstAttribute="centerY" secondItem="3aX-VC-uDK" secondAttribute="centerY" id="JX1-Nl-pG5"/>
+                                <constraint firstItem="3aX-VC-uDK" firstAttribute="top" secondItem="k3M-hh-cUS" secondAttribute="top" id="Cik-ZG-uGx"/>
                                 <constraint firstAttribute="bottom" secondItem="wxL-ov-b9H" secondAttribute="bottom" id="OOR-QX-fc8"/>
-                                <constraint firstItem="3aX-VC-uDK" firstAttribute="leading" secondItem="4aY-jg-rwU" secondAttribute="trailing" constant="50" id="U2X-le-Wm0"/>
+                                <constraint firstItem="3aX-VC-uDK" firstAttribute="centerX" secondItem="KNW-d7-M8V" secondAttribute="centerX" id="RgZ-5E-TlT"/>
+                                <constraint firstItem="3aX-VC-uDK" firstAttribute="centerX" secondItem="HP3-LG-r88" secondAttribute="centerX" id="STw-KM-rn8"/>
                                 <constraint firstItem="wxL-ov-b9H" firstAttribute="top" secondItem="HP3-LG-r88" secondAttribute="bottom" constant="20" id="UwA-Eq-6mT"/>
-                                <constraint firstItem="VBF-K8-cQH" firstAttribute="centerY" secondItem="3aX-VC-uDK" secondAttribute="centerY" id="VAY-V5-fuo"/>
                                 <constraint firstItem="fRw-Ck-1rH" firstAttribute="centerX" secondItem="88L-Ph-gIj" secondAttribute="centerX" id="WQF-5o-gHh"/>
-                                <constraint firstItem="HP3-LG-r88" firstAttribute="centerX" secondItem="3aX-VC-uDK" secondAttribute="centerX" id="XkX-2k-MM3"/>
                                 <constraint firstItem="UQe-pc-iNZ" firstAttribute="top" secondItem="7oY-H8-1C7" secondAttribute="top" id="Ypq-k9-cjA"/>
-                                <constraint firstItem="3aX-VC-uDK" firstAttribute="centerX" secondItem="88L-Ph-gIj" secondAttribute="centerX" id="aHk-oW-An4"/>
                                 <constraint firstItem="KNW-d7-M8V" firstAttribute="centerX" secondItem="fRw-Ck-1rH" secondAttribute="centerX" id="aYL-BH-x1e"/>
                                 <constraint firstItem="KNW-d7-M8V" firstAttribute="top" secondItem="fRw-Ck-1rH" secondAttribute="bottom" constant="10" id="atG-lL-ZSX"/>
-                                <constraint firstItem="k3M-hh-cUS" firstAttribute="centerY" secondItem="3aX-VC-uDK" secondAttribute="centerY" id="cUf-Mk-YVM"/>
                                 <constraint firstItem="HP3-LG-r88" firstAttribute="top" secondItem="7oY-H8-1C7" secondAttribute="top" id="dTE-tl-0WJ"/>
+                                <constraint firstItem="3aX-VC-uDK" firstAttribute="centerY" secondItem="4aY-jg-rwU" secondAttribute="centerY" id="ghP-rb-2zd"/>
                                 <constraint firstItem="7oY-H8-1C7" firstAttribute="top" secondItem="k3M-hh-cUS" secondAttribute="bottom" constant="1" id="m1j-XQ-zO6"/>
                                 <constraint firstAttribute="height" constant="450" id="q6R-zg-XaI"/>
+                                <constraint firstItem="3aX-VC-uDK" firstAttribute="leading" secondItem="4aY-jg-rwU" secondAttribute="trailing" constant="50" id="qrd-Sp-rMS"/>
+                                <constraint firstItem="Gpf-C1-8Eu" firstAttribute="leading" secondItem="3aX-VC-uDK" secondAttribute="trailing" constant="50" id="raP-SK-cBo"/>
+                                <constraint firstItem="3aX-VC-uDK" firstAttribute="centerY" secondItem="Gpf-C1-8Eu" secondAttribute="centerY" id="vJw-hi-vwv"/>
                             </constraints>
                             <variation key="default">
                                 <mask key="constraints">
@@ -159,7 +159,7 @@
                 <constraint firstItem="dcz-yc-8rr" firstAttribute="top" secondItem="abk-ZE-3ab" secondAttribute="bottom" constant="15" id="ze6-3L-riQ"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-            <point key="canvasLocation" x="349.5" y="292.5"/>
+            <point key="canvasLocation" x="444.5" y="232.5"/>
         </view>
     </objects>
     <resources>

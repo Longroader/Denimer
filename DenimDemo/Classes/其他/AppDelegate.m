@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "LZFHomeViewController.h"
 #import "LZFNavigationController.h"
+#import "LZFRootVcPicker.h"
 
 @interface AppDelegate ()
 
@@ -21,10 +22,13 @@
     
     self.window = [[UIWindow alloc] init];
     
+    // 直接进入主界面
     LZFHomeViewController *homeVc = [[LZFHomeViewController alloc] init];
     LZFNavigationController *navVc = [[LZFNavigationController alloc] initWithRootViewController:homeVc];
-    
     self.window.rootViewController = navVc;
+    
+    // 经过新特性界面在进入主界面
+//    self.window.rootViewController = [LZFRootVcPicker chooseRootVcOfWindow];
     
     [self.window makeKeyAndVisible];
     

@@ -10,21 +10,20 @@
 
 @implementation UIView (ZFExtension)
 
-// 从和类名相同的Xib里加载数据到cell
-+ (instancetype)lzf_viewFromXib
-{
+/**
+ * 从和类名相同的Xib里加载数据到cell
+ */
++ (instancetype)lzf_viewFromXib {
     return [[NSBundle mainBundle] loadNibNamed:NSStringFromClass(self) owner:nil options:nil].lastObject;
 }
 
--(void)setZf_size:(CGSize)zf_size
-{
+-(void)setZf_size:(CGSize)zf_size {
     CGRect frame = self.frame;
     frame.size = zf_size;
     self.frame = frame;
 }
 
-- (void)setZf_width:(CGFloat)zf_width
-{
+- (void)setZf_width:(CGFloat)zf_width {
     CGRect frame = self.frame;
     frame.size.width = zf_width;
     self.frame = frame;

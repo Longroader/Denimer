@@ -76,7 +76,7 @@
     self.navigationItem.titleView = titlesview;
     self.titlesview = titlesview;
     // 2.创建标题按钮
-    NSArray *titles = @[@"品牌", @"频道"];
+    NSArray *titles = @[@"品牌", @"分类"];
     
     CGFloat titleButtonW = titlesview.zf_width / 2;
     CGFloat titleButtonH = titlesview.zf_height;

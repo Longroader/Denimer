@@ -226,7 +226,6 @@ static NSString *LZFBrandCellID = @"brand";
     // 动态隐藏和显示导航条
     if(velocity.y > 0) { // 加速度 > 0 时隐藏导航条
         [self.navigationController setNavigationBarHidden:YES animated:YES];
-        [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     } else {
         
         [self.navigationController setNavigationBarHidden:NO animated:YES];
